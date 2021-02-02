@@ -14,7 +14,7 @@ aws lambda create-function \
     --function-name my-function \
     --zip-file fileb://function.zip \
     --handler index.handler --runtime nodejs12.x \
-    --role arn:aws:iam::149239330696:role/lambda-exemplo \
+    --role arn:aws:iam::exemplo:role/lambda-exemplo \
     --profile otallyto \
     | tee logs/lambda-create.log
 
