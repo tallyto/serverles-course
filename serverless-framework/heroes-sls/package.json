@@ -1,0 +1,20 @@
+{
+  "name": "heroes-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke": "sls invoke -f hero-insert --path requests-mock/hero.insert.json --aws-profile otallyto",
+    "invoke-local": "sls invoke local -f hero-insert --path requests-mock/hero.insert.json --aws-profile otallyto",
+    "deploy": "sls deploy --aws-profile otallyto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.839.0",
+    "uuid": "^8.3.2"
+  }
+}
