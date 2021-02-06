@@ -1,0 +1,19 @@
+{
+  "name": "lambda-environment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "undeploy": "sls remove --stage qa --aws-profile otallyto",
+    "deploy": "sls deploy --stage qa --aws-profile otallyto",
+    "invoke-local": "sls invoke local -f commit-message-scheduler --log --aws-profile otallyto",
+    "invoke-prod": "sls invoke --stage prod local -f commit-message-scheduler --log --aws-profile otallyto",
+    "invoke": "sls invoke -f commit-message-scheduler --aws-profile otallyto"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "env-var": "^7.0.0",
+    "uuid": "^8.3.2"
+  }
+}
