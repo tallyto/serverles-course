@@ -1,0 +1,27 @@
+
+service: localstack-sls
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-localstack
+  - serverless-offline
+  - serverless-mocha-plugin
+
+custom:
+  serverless-offline:
+    useChildProcessess: true
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          method: get
+          path: hello
