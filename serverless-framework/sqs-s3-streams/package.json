@@ -1,0 +1,26 @@
+{
+  "name": "localstack-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "npx sls invoke test --path test",
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "npx sls offline start --host 0.0.0.0",
+    "undeploy": "sls remove --aws-profile otallyto",
+    "deploy": "sls deploy --aws-profile otallyto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "serverless": "^2.22.0",
+    "serverless-localstack": "^0.4.28",
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^6.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.839.0"
+  }
+}
