@@ -7,8 +7,13 @@
     "test": "npx sls invoke test --path test",
     "start": "npx nodemon --exec npm run offline",
     "offline": "npx sls offline start --host 0.0.0.0",
-    "undeploy": "sls remove --aws-profile otallyto",
-    "deploy": "sls deploy --aws-profile otallyto"
+    "undeploy": "npx sls remove --aws-profile otallyto",
+    "deploy": "npx sls deploy --aws-profile otallyto",
+    "s3-logs": "npx sls logs -f s3listener -t --aws-profile otallyto",
+    "sqs-logs": "npx sls logs -f sqslistener -t --aws-profile otallyto",
+    "invoke-sqs-local": "npx sls inntvoke local -f sqslistener --path mocks/sqs-insert.json",
+    "invoke-s3-local": "npx sls invoke local -f s3listener --path mocks/s3-insert.json --aws-profile otallyto",
+    "invoke-s3-aws": "npx sls invoke -f s3listener --aws-profile otallyto"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +26,7 @@
     "serverless-offline": "^6.8.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.839.0"
+    "aws-sdk": "^2.839.0",
+    "csvtojson": "^2.0.10"
   }
 }

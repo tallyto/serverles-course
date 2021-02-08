@@ -10,7 +10,7 @@ provider:
   stage: ${opt:stage, "dev"}
   environment: 
     BUCKET_NAME: s3-localstack-dev
-    SQS_NAME: sqs-localstack-dev
+    QUEUE_URL: sqs-localstack-dev
   iamRoleStatements:
     - Effect: Allow
       Action: 
@@ -72,5 +72,5 @@ resources:
     SQSQueue:
       Type: AWS::SQS::Queue
       Properties:
-        QueueName: ${self:provider.environment.SQS_NAME}
+        QueueName: ${self:provider.environment.QUEUE_URL}
         VisibilityTimeout: 60
