@@ -3,7 +3,7 @@
       {
           "messageId": "07b647fc-25e8-4f51-9540-3975d0e0c0f3",
           "receiptHandle": "AQEBxHk6BgQNtwQNZqn8Z/LiLdpf+QpTzFTEuOkPRSj8Xltf2X2XPxIZvQmybOMAO0AVx0k+EzFgAaDTmUWfu1SMtfNYtPJP6bajloV90RlcIFPXUfVPwIhUVkBtYh6RXcCj9P/FoRbYwM3r/283+yzhBUM5/bh83CEBHhJn9l5CZaSdcv8aKpXYZp226dVUNds5uIH5cMxY7w0SDQH1IZTW3qVBO/Cr6hnBbYSQazvVYRE+lrD9VEeMlYy+rLzer4CugccsgBVODP6jvy7SBLVZwN1MZIK26wjzLO6R/AJ0s4APOhALHwLmJlteLhrHBT7UrgfGLSmDWbHNOKSG6BXMgJhCUcoQi3FXxe+qxmfyKi2iR1TekPt66//OarIqYZ/9KwBfhgEW+v+916cw/+4N3A==",
-          "body": "Hello world",
+          "body": "{\"name\": \"Hello world\"}",
           "attributes": {
               "ApproximateReceiveCount": "1",
               "SentTimestamp": "1612729735987",

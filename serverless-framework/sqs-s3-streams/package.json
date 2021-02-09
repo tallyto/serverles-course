@@ -11,7 +11,7 @@
     "deploy": "npx sls deploy --aws-profile otallyto",
     "s3-logs": "npx sls logs -f s3listener -t --aws-profile otallyto",
     "sqs-logs": "npx sls logs -f sqslistener -t --aws-profile otallyto",
-    "invoke-sqs-local": "npx sls inntvoke local -f sqslistener --path mocks/sqs-insert.json",
+    "invoke-sqs-local": "npx sls invoke local -f sqslistener --path mocks/sqs-insert.json",
     "invoke-s3-local": "npx sls invoke local -f s3listener --path mocks/s3-insert.json --aws-profile otallyto",
     "invoke-s3-aws": "npx sls invoke -f s3listener --aws-profile otallyto"
   },
