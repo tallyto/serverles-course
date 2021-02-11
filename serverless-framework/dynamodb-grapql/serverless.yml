@@ -65,6 +65,7 @@ functions:
       - http:
           path: hello
           method: any
+          cors: true
 
 resources:
   Resources:
