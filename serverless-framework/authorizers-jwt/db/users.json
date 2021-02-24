@@ -1,0 +1,12 @@
+[{
+  "username": "admin",
+  "password": "admin",
+  "scopes": ["heroes:list"]
+},
+{
+  "username": "user",
+  "password": "user",
+  "scopes": ["heroes:create"]
+
+}
+]
