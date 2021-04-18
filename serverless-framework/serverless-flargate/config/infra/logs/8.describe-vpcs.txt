@@ -1,0 +1,62 @@
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-2b7a0851",
+            "State": "available",
+            "VpcId": "vpc-4af42537",
+            "OwnerId": "149239330696",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-3763c158",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true
+        },
+        {
+            "CidrBlock": "10.0.0.0/16",
+            "DhcpOptionsId": "dopt-2b7a0851",
+            "State": "available",
+            "VpcId": "vpc-05c2253e279e3aa6d",
+            "OwnerId": "149239330696",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-089c3263e9a526f63",
+                    "CidrBlock": "10.0.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": false,
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "EC2ContainerService-default"
+                },
+                {
+                    "Key": "Description",
+                    "Value": "Created for ECS cluster default"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "Vpc"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:149239330696:stack/EC2ContainerService-default/650d77c0-34f7-11eb-85d3-0e0d04c7a1a5"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ECS default - VPC"
+                }
+            ]
+        }
+    ]
+}

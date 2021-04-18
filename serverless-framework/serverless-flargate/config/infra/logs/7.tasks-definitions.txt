@@ -1,0 +1,6 @@
+{
+    "taskDefinitionArns": [
+        "arn:aws:ecs:us-east-1:149239330696:task-definition/first-run-task-definition:1",
+        "arn:aws:ecs:us-east-1:149239330696:task-definition/process-data:1"
+    ]
+}
