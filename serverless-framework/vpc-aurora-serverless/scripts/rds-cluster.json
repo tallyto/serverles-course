@@ -1,0 +1,47 @@
+{
+    "DBCluster": {
+        "AllocatedStorage": 1,
+        "AvailabilityZones": [
+            "us-east-1a",
+            "us-east-1d",
+            "us-east-1c"
+        ],
+        "BackupRetentionPeriod": 1,
+        "DBClusterIdentifier": "serverlesscourse",
+        "DBClusterParameterGroup": "default.aurora5.6",
+        "DBSubnetGroup": "default",
+        "Status": "creating",
+        "Endpoint": "serverlesscourse.cluster-cdboaawuxhxu.us-east-1.rds.amazonaws.com",
+        "ReaderEndpoint": "serverlesscourse.cluster-ro-cdboaawuxhxu.us-east-1.rds.amazonaws.com",
+        "MultiAZ": false,
+        "Engine": "aurora",
+        "EngineVersion": "5.6.10a",
+        "Port": 3306,
+        "MasterUsername": "otallyto",
+        "PreferredBackupWindow": "04:20-04:50",
+        "PreferredMaintenanceWindow": "fri:09:17-fri:09:47",
+        "ReadReplicaIdentifiers": [],
+        "DBClusterMembers": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-370b0805",
+                "Status": "active"
+            }
+        ],
+        "HostedZoneId": "Z2R2ITUGPM61AM",
+        "StorageEncrypted": true,
+        "KmsKeyId": "arn:aws:kms:us-east-1:149239330696:key/e2120d2c-ad00-4ae6-9153-85a71b8f7f87",
+        "DbClusterResourceId": "cluster-M2ZSBSIFGRNFNZA3AQNWXJGW3A",
+        "DBClusterArn": "arn:aws:rds:us-east-1:149239330696:cluster:serverlesscourse",
+        "AssociatedRoles": [],
+        "IAMDatabaseAuthenticationEnabled": false,
+        "ClusterCreateTime": "2021-04-11T22:25:10.207000+00:00",
+        "EngineMode": "serverless",
+        "DeletionProtection": false,
+        "HttpEndpointEnabled": false,
+        "CopyTagsToSnapshot": false,
+        "CrossAccountClone": false,
+        "DomainMemberships": [],
+        "TagList": []
+    }
+}
