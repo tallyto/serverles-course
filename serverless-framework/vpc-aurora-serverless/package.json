@@ -6,7 +6,7 @@
   "dependencies": {
     "faker": "^5.5.2",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.29.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
